@@ -20,11 +20,14 @@ main {
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .cards {
-    width: calc(100% / 3);
+    margin: auto;
     border: white 3px solid;
+    
+    
     
 }
 
