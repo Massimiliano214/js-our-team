@@ -52,16 +52,16 @@ for (let i = 0; i < listaMembri.length; i++) {
     
     cardDom.innerHTML += `${listaMembri[i].ruolo} <br>`; 
     
-
+    
     
 
 
-    photoDom.innerHTML +=
-        `
-            <img class="image" src="./img/${listaMembri[i].img}"><br>
-        `;
-
-    console.log("console card dom " + cardDom);
+    
+    cardDom.innerHTML += 
+    
+    `
+        <img class="image" src="./img/${listaMembri[i].img}"><br>
+    `;
 }
 
     cardDom.classList.add("card");
