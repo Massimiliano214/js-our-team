@@ -32,35 +32,47 @@ let listaMembri = [
     {
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
-        img: "barbara-ramos-graphic-designer.jpg"
+        "img": "barbara-ramos-graphic-designer.jpg"
     },
 ];
 
 let cardsDom = document.querySelector(".cards");
 let photoDom = document.querySelector(".photo");
 
+
+
+const cardDom = document.createElement("div") ;
+    
 for (let i = 0; i < listaMembri.length; i++) {
 
-    for (let key in listaMembri[i]){
-        console.log(listaMembri[i][key]);
-        cardsDom.innerHTML += `<div class="card${i}">${listaMembri[i][key]}<br></div>`;  
-    }
-
-    let cardDom = document.querySelector(".card");
+    
+        
+    cardDom.innerHTML += `${listaMembri[i].nome}<br>`;
+        
+    
+    cardDom.innerHTML += `${listaMembri[i].ruolo} <br>`; 
+    
 
     
+
+
     photoDom.innerHTML +=
         `
-            <img src= ./img/${listaMembri[i].img}><br>
+            <img class="image" src="./img/${listaMembri[i].img}"><br>
         `;
 
-        
+    console.log("console card dom " + cardDom);
 }
 
+    cardDom.classList.add("card");
+    cardsDom.append(cardDom);
+    cardDom.append(photoDom);
+
+    
+
+    console.log("cardDom" + cardDom);
 
 
-
-    //containerDom.innerHTML += listaMembri[listaMembri.length - 1][key]+ "<br>";
 
 
 
