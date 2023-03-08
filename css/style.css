@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    width: 1170px;
+    height: 80vh;
+    background-color: coral;
+    color: black;
+    line-height: 2rem;
+    padding: 2rem;
+
+}
