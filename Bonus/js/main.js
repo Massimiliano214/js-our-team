@@ -43,14 +43,18 @@ for (let i = 0; i < listaMembri.length; i++) {
 
     for (let key in listaMembri[i]){
         console.log(listaMembri[i][key]);
-        cardsDom.innerHTML += `<div class="card">${listaMembri[i][key]}<br></div>`;  
+        cardsDom.innerHTML += `<div class="card${i}">${listaMembri[i][key]}<br></div>`;  
     }
 
+    let cardDom = document.querySelector(".card");
+
+    
     photoDom.innerHTML +=
         `
             <img src= ./img/${listaMembri[i].img}><br>
         `;
 
+        
 }
 
 

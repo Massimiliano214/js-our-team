@@ -24,12 +24,14 @@ main {
 }
 
 .cards {
-    width: 100%;
-}
-.card {
     width: calc(100% / 3);
     border: white 3px solid;
+    
 }
+
+.card {
+    width: calc(100% / 3);
+}    
 
 .photo {
     width: 100%;
